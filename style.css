@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    border: 2px solid black;
+    width: 500px;
+    margin: auto;
+    height: 700px;
+    margin-top: 17vh;
+}
+.screen {
+    border: 2px solid black;
+    display: flex;
+    height: 150px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+.middle-section {
+    display: flex;
+}
+.clear , .delete {
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+    height: 100px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.buttons div {
+    display: flex;
+    border: 1px solid black;
+    width: 20.9%;
+    height: 80px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
