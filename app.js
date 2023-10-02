@@ -1,6 +1,7 @@
 const screenDisplay = document.querySelector(".screen");
 const clearBtn = document.querySelector(".clear");
 const deleteBtn = document.querySelector(".delete");
+const btnAll = document.querySelectorAll(".buttons");
 const btn1 = document.querySelector(".num1");
 const btn2 = document.querySelector(".num2");
 const btn3 = document.querySelector(".num3");
@@ -18,8 +19,14 @@ const btnEqual = document.querySelector(".btEqual");
 const btnPlus = document.querySelector(".btPlus");
 const btnDiv = document.querySelector(".btDiv");
 
-btn1.addEventListener("click", ()=> {
-    screenDisplay.textContent = "1";
-})
+//--clear button
+clearBtn.addEventListener("click", ()=> {
+    screenDisplay.value= 0;
+});
 
-screenDisplay.textContent= "0";
+isNumberKey(evt) {
+    var charCode = (evt.which) ? evt.which : evt.keyCode
+    if (charCode > 31 && (charCode <48 || charCode >57))
+    return false;
+return true;
+};
