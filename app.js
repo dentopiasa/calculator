@@ -25,7 +25,6 @@ const btnDiv = document.querySelector(".btDiv");
 clearBtn.addEventListener("click", ()=> {
     screenDisplay.value= "";
 });
-
 function isNumberKey(evt) {
     console.log(screenDisplay.value);
     var charCode = (evt.which) ? evt.which : evt.keyCode
@@ -33,7 +32,6 @@ function isNumberKey(evt) {
     return false;
     return true;  
 }   
-
 btnEqual.addEventListener("click", function() {
     var val = screenDisplay.value.split("+");
     console.log(val);
