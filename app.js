@@ -1,4 +1,5 @@
 const screenDisplay = document.querySelector(".screen");
+var currentValue = document.getElementById("screen").value;
 const clearBtn = document.querySelector(".clear");
 const deleteBtn = document.querySelector(".delete");
 const btnAll = document.querySelectorAll(".buttons");
@@ -19,14 +20,28 @@ const btnEqual = document.querySelector(".btEqual");
 const btnPlus = document.querySelector(".btPlus");
 const btnDiv = document.querySelector(".btDiv");
 
+
 //--clear button
 clearBtn.addEventListener("click", ()=> {
-    screenDisplay.value= 0;
+    screenDisplay.value= "";
 });
 
-isNumberKey(evt) {
+function isNumberKey(evt) {
+    console.log(screenDisplay.value);
     var charCode = (evt.which) ? evt.which : evt.keyCode
-    if (charCode > 31 && (charCode <48 || charCode >57))
+    if (charCode > 31 && (charCode <41 || charCode >57)) //or decimals?
     return false;
-return true;
-};
+    return true;  
+}   
+
+btnEqual.addEventListener("click", function() {
+    var val = screenDisplay.value.split("+");
+    console.log(val);
+    screenDisplay.value = val.reduce((a, b) => a + Number(b), 0)
+});
+
+
+
+
+
+

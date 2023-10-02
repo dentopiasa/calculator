@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container">
-<input class="screen" id="screen" type="number" value="" onkeypress="isNumberKey(event)">
+<input class="screen" id="screen" type="text" value="" oninput="return isNumberKey(event)">
 <div class="middle-section">    
     <div class="clear">CLEAR</div>
     <div class="delete">DELETE</div>
@@ -28,8 +28,8 @@
     <div class="btMinus">-</div>
     <div class="btPoint">.</div>
     <div class="num0">0</div>
-    <div class="btEqual=">=</div>
-    <div class="btPlus+">+</div>
+    <div class="btEqual">=</div>
+    <div class="btPlus">+</div>
 </div>
 </div>
 <script src="app.js"></script>   
