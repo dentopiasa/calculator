@@ -6,30 +6,30 @@
     <link rel=stylesheet href=style.css>
     <title>calculator</title>
 </head>
-<body>
+<body class="body">
 <div class="container">
-<input class="screen" id="screen" type="text" value="" oninput="return isNumberKey(event)">
+<input class="screen" id="screen" type="text" value="" oninput="return isNumberKey(event)" onkeypress="return isNumberKey(event)" maxlength="16">
 <div class="middle-section">    
     <div class="clear">CLEAR</div>
     <div class="delete">DELETE</div>
 </div>
 <div class="buttons">
-    <div class="num7">7</div>
-    <div class="num8">8</div>
-    <div class="num9">9</div>
-    <div class="btDiv">%</div>
-    <div class="num4">4</div>
-    <div class="num5">5</div>
-    <div class="num6">6</div>
-    <div class="btMulti">x</div>
-    <div class="num1">1</div>
-    <div class="num2">2</div>
-    <div class="num3">3</div>
-    <div class="btMinus">-</div>
-    <div class="btPoint">.</div>
-    <div class="num0">0</div>
+    <div class="btn" id="btNum">7</div>
+    <div class="btn" id="btNum">8</div>
+    <div class="btn" id="btNum">9</div>
+    <div class="btn">/</div>
+    <div class="btn" id="btNum">4</div>
+    <div class="btn" id="btNum">5</div>
+    <div class="btn" id="btNum">6</div>
+    <div class="btn">*</div>
+    <div class="btn" id="btNum">1</div>
+    <div class="btn" id="btNum">2</div>
+    <div class="btn" id="btNum">3</div>
+    <div class="btn">-</div>
+    <div class="btn">.</div>
+    <div class="btn" id="btNum">0</div>
     <div class="btEqual">=</div>
-    <div class="btPlus">+</div>
+    <div class="btn">+</div>
 </div>
 </div>
 <script src="app.js"></script>   
