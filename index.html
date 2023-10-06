@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=stylesheet href=style.css>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
     <title>calculator</title>
 </head>
 <body class="body">
 <div class="container">
-<input class="screen" id="screen" type="text" value="" oninput="return isNumberKey(event)" onkeypress="return isNumberKey(event)" maxlength="16">
+<input class="screen" id="screen" type="text" maxlength="1" value="" oninput="return isNumberKey(event)" onkeypress="return isNumberKey(event)">
 <div class="middle-section">    
     <div class="clear">AC</div>
     <div class="delete">DEL</div>
