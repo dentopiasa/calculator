@@ -11,7 +11,7 @@
 </head>
 <body class="body">
 <div class="container">
-<input class="screen" id="screen" type="text" maxlength="1" value="" oninput="return isNumberKey(event)" onkeypress="return isNumberKey(event)">
+<input class="screen" id="screen" type="text" maxlength="16" value="" oninput="return isNumberKey(event)" onkeypress="return isNumberKey(event)">
 <div class="middle-section">    
     <div class="clear">AC</div>
     <div class="delete">DEL</div>
@@ -20,19 +20,19 @@
     <div class="btn" id="btNum">7</div>
     <div class="btn" id="btNum">8</div>
     <div class="btn" id="btNum">9</div>
-    <div class="btn">/</div>
+    <div class="btn" id="btCalc">/</div>
     <div class="btn" id="btNum">4</div>
     <div class="btn" id="btNum">5</div>
     <div class="btn" id="btNum">6</div>
-    <div class="btn">*</div>
+    <div class="btn" id="btCalc" >*</div>
     <div class="btn" id="btNum">1</div>
     <div class="btn" id="btNum">2</div>
     <div class="btn" id="btNum">3</div>
-    <div class="btn">-</div>
-    <div class="btn">.</div>
+    <div class="btn" id="btCalc">-</div>
+    <div class="btn" id="btNum">.</div>
     <div class="btn" id="btNum">0</div>
-    <div class="btEqual">=</div>
-    <div class="btn">+</div>
+    <div class="btEqual" id="btCalc">=</div>
+    <div class="btn" id="btCalc">+</div>
 </div>
 </div>
 <script src="app.js"></script>   
